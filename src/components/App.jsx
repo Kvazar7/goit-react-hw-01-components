@@ -6,9 +6,9 @@ import { TransactionHistoryApp } from './Transactionhistory/TransactionHistory';
 export const App = () => {
   return (
     <>
-    <ProfileApp />,
-    <StatisticsApp />,
-    <FriendListApp />,
+    <ProfileApp />
+    <StatisticsApp />
+    <FriendListApp />
     <TransactionHistoryApp />
     </>
   )

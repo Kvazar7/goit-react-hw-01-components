@@ -1,0 +1,15 @@
+.transaction_history {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+    padding: 10px;
+    width: 600px;
+    background-color: bisque;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.item {
+    background-color: rgb(235, 247, 243);
+}

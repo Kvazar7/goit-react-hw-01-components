@@ -1,7 +1,7 @@
-import user from '../User/user.json'
+import PropTypes from "prop-types";
 import css from '../Profile/Profile.module.css'
 
-const Profile = ({ username, tag, location, avatar, stats }) => (
+export const Profile = ({ username, tag, location, avatar, stats }) => (
   <div className={css.profile}>
     <div className={css.description}>
       <img
@@ -31,12 +31,10 @@ const Profile = ({ username, tag, location, avatar, stats }) => (
   </div>
 );
 
-export const ProfileApp = () => (
-  <Profile
-      username={user.username}
-      tag={user.tag}
-      location={user.location}
-      avatar={user.avatar}
-      stats={user.stats}
-  />
-);
+Profile.prototype = {
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats: PropTypes.string
+}
